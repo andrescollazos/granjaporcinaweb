@@ -1,0 +1,55 @@
+{{extend 'layout.html'}}
+<h1>REGISTRAR CERDA</h1>
+<a class="btn btn-default btn-secondary" href="/Oink/default/cerda_manager.html" title="Atras">Atrás</a>
+{{=formC.custom.begin}}
+<table>
+    <tbody>
+        <tr id="cerda_raza__row">
+            <td class="w2p_fl">
+                <label class="" for="cerda_raza" id="cerda_raza__label">Raza de la cerda: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formC.custom.widget.raza}}
+            </td>
+        </tr>
+        <tr id="cerda_fecha_nacimiento__row">
+            <td class="w2p_fl">
+                <label class="" for="cerda_fecha_nacimiento" id="cerda_fecha_nacimiento__label">Fecha de nacimiento: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formC.custom.widget.fecha_nacimiento}}
+            </td>
+        </tr>
+        <tr id="cerda_nombre_row">
+            <td class="w2p_fl">
+                <label class="" for="cerda_nombre" id="cerda_nombre__label">Nombre de la cerda: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formC.custom.widget.nombre}}
+            </td>
+        </tr>
+        <tr id="cerda_id_madre__row">
+            <td class="w2p_fl">
+                <label class="" for="cerda_id_madre" id="cerda_id_madre__label">Madre de la cerda: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formC.custom.widget.id_madre}}
+            </td>
+        </tr>
+        <tr id="cerda_padre__row">
+            <td class="w2p_fl">
+                <label class="" for="cerda_padre" id="cerda_padre__label">Semen padre de la cerda: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formC.custom.widget.padre}}
+            </td>
+        </tr>
+        <tr id="submit_record__row">
+            <td class="w2p_fl">
+            </td>
+            <td class="w2p_fw">
+                {{=formC.custom.submit}}
+            </td>
+    </tbody>
+</table>
+{{=formC.custom.end}}

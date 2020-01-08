@@ -1,0 +1,47 @@
+{{extend 'layout.html'}}
+<h1>REGISTRAR MONTA</h1>
+<a class="btn btn-default btn-secondary" href="/Oink/default/monta_manager.html" title="Atras">Atrás</a>
+{{=formM.custom.begin}}
+<table>
+    <tbody>
+        <tr id="monta_id_semen__row">
+            <td class="w2p_fl">
+                <label class="" for="monta_id_semen" id="monta_id_semen__label">Semen utilizado: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formM.custom.widget.id_semen}}
+            </td>
+        </tr>
+        <tr id="monta_id_cerda__row">
+            <td class="w2p_fl">
+                <label class="" for="monta_id_cerda" id="monta_id_cerda__label">Cerda montada: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formM.custom.widget.id_cerda}}
+            </td>
+        </tr>
+        <tr id="monta_fecha_monta__row">
+            <td class="w2p_fl">
+                <label class="" for="monta_fecha_monta" id="monta_fecha_monta__label">Fecha de la monta: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formM.custom.widget.fecha_monta}}
+            </td>
+        </tr>
+         <tr style="display:none;" id="monta_prueba_preñez__row">
+            <td class="w2p_fl">
+                <label class="" for="monta_prueba_preñez" id="monta_prueba_preñez__label">Prueba preñez: </label>
+            </td>
+            <td class="w2p_fl" type="hidden">
+                {{=formM.custom.widget.prueba_preñez}}
+            </td>
+        </tr>
+        <tr id="submit_record__row">
+            <td class="w2p_fl">
+            </td>
+            <td class="w2p_fw">
+                {{=formM.custom.submit}}
+            </td>
+    </tbody>
+</table>
+{{=formM.custom.end}}

@@ -1,0 +1,55 @@
+{{extend 'layout.html'}}
+<h1>REGISTRAR PARTO</h1>
+<a class="btn btn-default btn-secondary" href="/Oink/default/parto_manager.html" title="Atras">Atrás</a>
+{{=formP.custom.begin}}
+<table>
+    <tbody>
+        <tr id="parto_id_tareas_gestacion__row">
+            <td class="w2p_fl">
+                <label class="" for="parto_id_tareas_gestacion" id="parto_id_tareas_gestacion__label">Tareas de gestación para este parto: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formP.custom.widget.id_tareas_gestacion}}
+            </td>
+        </tr>
+        <tr id="parto_fecha_parto__row">
+            <td class="w2p_fl">
+                <label class="" for="fecha_parto" id="parto_fecha_parto__label">Fecha del parto: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formP.custom.widget.fecha_parto}}
+            </td>
+        </tr>
+        <tr id="parto_cantidad_nacidos_muertos__row">
+            <td class="w2p_fl">
+                <label class="" for="cantidad_nacidos_muertos" id="parto_cantidad_nacidos_muertos__label">Cantidad de lechones nacidos muertos: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formP.custom.widget.cantidad_nacidos_muertos}}
+            </td>
+        </tr>
+        <tr id="parto_cantidad_nacidos_machos__row">
+            <td class="w2p_fl">
+                <label class="" for="cantidad_nacidos_machos" id="parto_cantidad_nacidos_machos__label">Cantidad de lechones vivos machos: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formP.custom.widget.cantidad_nacidos_machos}}
+            </td>
+        </tr>
+        <tr id="parto_cantidad_nacidos_hembras__row">
+            <td class="w2p_fl">
+                <label class="" for="cantidad_nacidos_hembras" id="parto_cantidad_nacidos_hembras__label">Cantidad de lechones vivas hembras: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formP.custom.widget.cantidad_nacidos_hembras}}
+            </td>
+        </tr>
+        <tr id="submit_record__row">
+            <td class="w2p_fl">
+            </td>
+            <td class="w2p_fw">
+                {{=formP.custom.submit}}
+            </td>
+    </tbody>
+</table>
+{{=formP.custom.end}}

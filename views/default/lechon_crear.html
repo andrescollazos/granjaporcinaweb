@@ -1,0 +1,63 @@
+{{extend 'layout.html'}}
+<h1>CREAR LECHONES</h1>
+<a class="btn btn-default btn-secondary" href="/Oink/default/lechon_manager.html" title="Atras">Atrás</a>
+{{=formL.custom.begin}}
+<table>
+    <tbody>
+        <tr id="lechon_id_lote__row">
+            <td class="w2p_fl">
+                <label class="" for="lechon_id_lote" id="lechon_id_lote__label">Lote de parido: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formL.custom.widget.id_lote}}
+            </td>
+        </tr>
+        <tr id="lechon_fecha_nacimiento__row">
+            <td class="w2p_fl">
+                <label class="" for="lechon_fecha_nacimiento" id="lechon_fecha_nacimiento__label">Fecha nacimiento: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formL.custom.widget.fecha_nacimiento}}
+            </td>
+        </tr>
+        <tr id="lechon_peso_nacer__row">
+            <td class="w2p_fl">
+                <label class="" for="lechon_peso_nacer" id="lechon_peso_nacer__label">Peso al nacer (kg): </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formL.custom.widget.peso_nacer}}
+            </td>
+        </tr>
+        <tr id="lechon_raza__row">
+            <td class="w2p_fl">
+                <label class="" for="lechon_raza" id="lechon_raza__label">Raza: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formL.custom.widget.raza}}
+            </td>
+        </tr>
+        <tr id="lechon_id_madre__row">
+            <td class="w2p_fl">
+                <label class="" for="lechon_id_madre" id="lechon_id_madre__label">Madre: </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formL.custom.widget.id_madre}}
+            </td>
+        </tr>
+        <tr id="lechon_id_padre__row">
+            <td class="w2p_fl">
+                <label class="" for="lechon_id_padre" id="lechon_id_padre__label">Padre (muestra semen): </label>
+            </td>
+            <td class="w2p_fl">
+                {{=formL.custom.widget.id_padre}}
+            </td>
+        </tr>
+        <tr id="submit_record__row">
+            <td class="w2p_fl">
+            </td>
+            <td class="w2p_fw">
+                {{=formL.custom.submit}}
+            </td>
+    </tbody>
+</table>
+{{=formL.custom.end}}
